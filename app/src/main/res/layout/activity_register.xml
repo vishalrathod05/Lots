@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/blackbg"
+    tools:context="com.example.vishal.lots.Register">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/usernameText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="User Name"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            style="@style/edittextstyle"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:inputType="textCapWords"
+            style="@style/edittextstyle"
+            android:padding="10dp"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            style="@style/edittextstyle"
+            android:padding="10dp"
+            android:maxLines="1"
+            />
+
+        <EditText
+            android:id="@+id/userType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="User Type"
+            android:inputType="text"
+            style="@style/edittextstyle"
+            android:padding="10dp"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/permitZoneText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Permit Type"
+            android:inputType="text"
+            android:padding="10dp"
+            style="@style/edittextstyle"
+            android:maxLines="1" />
+
+<!--        <Spinner
+            android:id="@+id/userTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:ellipsize="marquee"
+            style="@style/edittextstyle"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:padding="10dp"
+            android:spinnerMode="dropdown" />
+
+        <Spinner
+            android:id="@+id/permitTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColorHint="@android:color/white"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/roundedbg"
+            android:spinnerMode="dropdown" />
+-->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/roundedbg_brown"
+            android:textColor="@android:color/white"
+            android:text="Register" />
+
+        <Button
+            android:id="@+id/link_to_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:textColor="@android:color/white"
+            android:text="Already registred! Login Me."
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

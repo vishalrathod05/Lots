@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bottom_sheet"
+    android:layout_below="@id/app_bar"
+    android:layout_gravity="bottom"
+    android:background="@android:color/background_light"
+    android:elevation="@dimen/design_bottom_sheet_modal_elevation"
+    app:behavior_peekHeight="136dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_answer"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="2dp"
+            android:background="?android:attr/selectableItemBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp">
+
+
+                    <Button
+                        android:id="@+id/btn_0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_red_dark"
+                        android:text="FULL"
+                        android:textColor="@android:color/white"
+                        android:textStyle="normal|bold" />
+
+                    <Button
+                        android:id="@+id/btn_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_orange_dark"
+                        android:text="1-5"
+                        android:textColor="@android:color/white"
+                        android:textStyle="normal|bold" />
+
+                    <Button
+                        android:id="@+id/btn_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_green_light"
+                        android:text="5-10"
+                        android:textColor="@android:color/white"
+                        android:textStyle="normal|bold" />
+
+                    <Button
+                        android:id="@+id/btn_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/holo_green_dark"
+                        android:text="10+"
+                        android:textColor="@android:color/white"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Help improve Lots. Tell us how many spots are vacant at this location."
+                    android:textSize="10sp"
+                    android:textStyle="normal|italic" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

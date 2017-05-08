@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/blackbg"
+    tools:context="com.example.vishal.lots.LoginActivity">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="@dimen/logo_login_hgt"
+        android:layout_height="@dimen/logo_login_wid"
+        android:background="@drawable/lotslogo"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/image_logo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <EditText
+            android:id="@+id/emaillogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Email"
+            android:gravity="center"
+            android:textColorHint="@android:color/white"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/roundedbg"
+            android:maxLines="1" />
+
+        <EditText
+            android:id="@+id/passwordlogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Password"
+            android:gravity="center"
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:background="@drawable/roundedbg"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:maxLines="1"
+            />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/roundedbg_brown"
+            android:textColor="@android:color/white"
+            android:text="Login" />
+
+        <Button
+            android:id="@+id/link_to_register"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:textColor="@android:color/white"
+            android:background="@null"
+            android:text="Not a member? Sign up now."
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

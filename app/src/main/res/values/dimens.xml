@@ -1,0 +1,11 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="parking_letter_size">22dp</dimen>
+    <dimen name="letter_shape_hw">45dp</dimen>
+    <dimen name="logo_login_wid">175dp</dimen>
+    <dimen name="logo_login_hgt">175dp</dimen>
+
+</resources>

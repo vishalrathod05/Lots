@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_account"
+            android:title="Account" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_favorites"
+            android:title="Favorites" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_parked"
+            android:title="Parked" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/nav_about"
+            android:title="About Us" />
+
+    </group>
+
+</menu>

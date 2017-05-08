@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "211356133902",
+    "firebase_url": "https://lotsproject-67cd1.firebaseio.com",
+    "project_id": "lotsproject-67cd1",
+    "storage_bucket": "lotsproject-67cd1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211356133902:android:a5fcfd3ce064fb98",
+        "android_client_info": {
+          "package_name": "com.example.vishal.lots"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211356133902-vcqbouce5n3qu8sd79b20lam4rhjkuil.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vishal.lots",
+            "certificate_hash": "2b8e9e20ba2b049fb9cf8c5d6c9dbe807497951d"
+          }
+        },
+        {
+          "client_id": "211356133902-lclprkopmh5dk38i452c0ompkkef5bdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2IuxLG2nGqLxK94kewahm9-SHhtuLGb8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211356133902-lclprkopmh5dk38i452c0ompkkef5bdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
