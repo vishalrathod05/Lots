@@ -48,6 +48,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
+import model.ParkingAvailability;
 import model.ParkingType;
 import model.ParkingZone;
 import model.PermitGroup;
@@ -305,7 +306,7 @@ public class MapsActivity extends AppCompatActivity implements NavigationView.On
                     MarkerOptions markerOptions = new MarkerOptions();
                     markerOptions.position(getPolygonCenterPoint(polygon.getPoints()));
 
-//                markerOptions.icon(BitmapDescriptorFactory.fromResource(getBitmapForAvailability(zone.availability)));
+                markerOptions.icon(BitmapDescriptorFactory.fromResource(getBitmapForAvailability(zone.availability)));
 
                     markerOptions.snippet(zone.getRegionId());
 //                markerOptions.title(getSnippetForAvailability(zone.availability));
@@ -322,7 +323,7 @@ public class MapsActivity extends AppCompatActivity implements NavigationView.On
                     int count = polyline.getPoints().size();
                     MarkerOptions markerOptions = new MarkerOptions();
                     markerOptions.position(polyline.getPoints().get(count / 2));
-//                markerOptions.icon(BitmapDescriptorFactory.fromResource(getBitmapForAvailability(zone.availability)));
+                markerOptions.icon(BitmapDescriptorFactory.fromResource(getBitmapForAvailability(zone.availability)));
 //                markerOptions.title(getSnippetForAvailability(zone.availability));
 
                     Marker marker = mMap.addMarker(markerOptions);
@@ -348,6 +349,25 @@ public class MapsActivity extends AppCompatActivity implements NavigationView.On
                 mBehavior.setState(BottomSheetBehavior.STATE_HIDDEN);
             }
         });
+    }
+
+    private int getBitmapForAvailability(ParkingAvailability availability) {
+        switch (availability) {
+            case FULL: {
+                return R.drawable.marker0;
+            }
+            case LESS_THAN_FIVE: {
+                return R.drawable.marker1;
+            }
+            case FIVE_TO_TEN: {
+                return R.drawable.marker2;
+            }
+            case GREATER_THAN_TEN: {
+                return R.drawable.marker3;
+            }
+
+        }
+        return 0;
     }
 
     private int getColorForPermit(PermitGroup parkingPermit) {
